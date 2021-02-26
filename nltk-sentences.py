@@ -5,7 +5,7 @@ from nltk import tokenize
 
 
 nltk.download('punkt')
-tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+tokenizer = nltk.data.load('tokenizers/punkt/spanish.pickle')
 
 arg_parser = argparse.ArgumentParser( description = "Copy source_file as single sentences in target_file." )
 arg_parser.add_argument( "source_file" )
