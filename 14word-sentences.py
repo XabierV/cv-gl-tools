@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import argparse
 
 arg_parser = argparse.ArgumentParser( description = "Copy source_file sentences with 14 words or less in target_file." )
