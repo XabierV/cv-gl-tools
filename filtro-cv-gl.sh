@@ -15,8 +15,8 @@ sed "s/^[0-9]\.//"                                  |   # 1. 2. etc. sen espazo
 sed "s/:$//"                                        |   # Dous puntos finais.
 sed "s/%/ por cento/"                               |   # salvamos algunhas cifras con porcentaxe
 sed "s/^[ \t]*//"                                   |   # Espazos iniciais
-'                                       |   # Asterisco+espazo ao inicio
-sed "s/\* $//"                                        |   # Espazo+asterisco ao final
+sed "s/^\* //"                                      |   # Asterisco+espazo ao inicio
+sed "s/ \*$//"                                      |   # Espazo+asterisco ao final
 sed "s/\([a-zA-Z]*\)\- \([a-zA-Z]*\)/\1\2/g" > temp;    # Palabras separadas en liñas diferentes (la- mentablemente, p.ex.)
 
 sed '
