@@ -1,7 +1,7 @@
 #!/bin/bash 
-substitucions=""$(dirname "$(readlink -f $0)")"/substitucions.map"
-numeros=""$(dirname "$(readlink -f $0)")"/numeros.map"
-anos=""$(dirname "$(readlink -f $0)")"/anos.map"
+substitucions=""$(dirname "$BASH_SOURCE")"/substitucions.map"
+numeros=""$(dirname "$BASH_SOURCE")"/numeros.map"
+anos=""$(dirname "$BASH_SOURCE")"/anos.map"
 
 awk 'NF>=2' $1                                      |   # Frases de dúas ou mais palabras 
 awk 'NF<20'                                         |   # Prefiltro para reducir as frases moi longas
